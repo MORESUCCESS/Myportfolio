@@ -1,0 +1,708 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+   background: #2a3166;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+span{
+    color: white;
+    width: 100%;
+}
+div.container{
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    display: inline;
+}
+div.tip{
+    width: 49%;
+    height: 60%;
+    float: right;
+
+}
+header{
+    width: 100%;
+    background-color: #2a3166;
+    margin: auto;
+    border-bottom: 1px solid #fff;
+    padding: 1.2em;
+    overflow: hidden;
+    position: fixed;
+    height: 8%;
+    z-index: 5;
+}
+header h1{
+    color:transparent;
+    width: 100%;
+    -webkit-text-stroke:1px #fff;
+    display: inline;
+    font-size: 4.2vw;
+    font-weight: bolder;
+    letter-spacing: 6pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container img{
+    border-radius: 50%;
+    margin-top: 0;
+    border: 1px solid white;
+}
+ul{
+    width: 100%;
+}
+ul li{
+    display: inline;
+    padding: 0.5em;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+border-bottom: 5px solid white;
+font-weight: 500;
+border-radius: 7px;
+}
+ul li a:hover{
+    background-color:#fff;
+    color: #000;
+    font-weight: bolder;
+    transition: 2s ease;
+    border-bottom: 5px solid #000;
+}
+.links{
+    float: right;
+    margin-right: 1em;
+    line-height: 2.1em;
+    width:100%;
+}
+.all{
+    width: 100%;
+    overflow: hidden;
+}
+/**media query to fit on all screens**/
+
+    @media(max-width: 768px){
+        .checkbtn,
+        #first-sec,
+        #first-sec .hold
+        .hold a,#newsletter, #about, .abt,
+        #first, .all,#services{
+      float:none;
+      text-align:center;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+    }
+}
+@media(max-width: 768px){
+    .tip{
+        float: right;
+    }
+}
+@media(max-width: 768px){
+header .all{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media(max-width: 768px){
+        header{
+            height: 4%;
+        }
+    }
+    @media(max-width: 768px){
+        #newsletter,.news{
+            margin-right: 3em;
+        }
+    }
+    @media(max-width: 768px){
+        footer .abt h1{
+            margin-right: 2em;
+        }
+    }
+    @media(max-width: 768px){
+        .element-two{
+            padding: 2em;
+            font-size: 0.2rem;
+            width: 100%;
+            height: 90%;
+            position: relative;
+            top: 4rem;
+        }
+    }
+    @media(max-width: 768px){
+        .element-two img{
+            height: 100%;
+        }
+    }
+    @media(max-width: 700px){
+        #first-sec .hold h1{
+            font-size: 2rem;
+        }
+    }
+    @media(max-width: 700px){
+        #first-sec .hold{
+            margin-top: 2rem;
+        }
+    }
+#first-sec{
+    text-align: center;
+    padding-top: 4rem;
+    width: 100%;
+    overflow: hidden;
+    font-family:serif;
+    padding-bottom: 7em;
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent),
+    url(ms.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto auto;
+    border-bottom: 5px solid #fff;
+    animation: anime;
+    animation-duration: 40s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+    transition: 8s ease;
+    height: 100%;
+}
+@keyframes anime{
+    0%{background-image: url('editt.png');}
+    25%{background-image: url('men.png');}
+    50%{background-image: url('ms5.jpg');}
+    75%{background-image: url('ms4.png');}
+    100%{background-image: url('editt.png');}
+}
+.hold{
+    font-size: 25pt;
+    color: white;
+    margin-top: 11rem;
+    text-align: center;
+}
+.hold h1{
+    font-size: 45px;
+    margin-top: 2em;
+    color:blanchedalmond;
+    line-height: 1.5em;
+    text-shadow: -2px -2px 10px #2a3166;
+    margin: auto auto;
+}
+.buts{
+    display: inline;
+    line-height: 2em;
+}
+.buts a{
+    text-decoration: none;
+    font-size: 0.5em;
+    padding: 8px;
+    background-color: transparent;
+    color:transparent;
+    border: 1px outset #fff;
+    border: radius 4px;;
+    -webkit-text-stroke:1px #fff;
+    font-family: cursive;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: -1px -1px 20px rgba(255, 16, 16,0.3);
+}
+.buts a:hover{
+    background-color: black;
+    color: white;
+    transition: 3s ease;
+    }
+/**abbout**/
+
+#about{
+    width: 100%;
+    background-color:#5d638f;
+    height: 50%;
+    overflow: hidden;
+    margin-top: 0;
+    padding-bottom: 10em;
+}
+#about .firsthead{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 7px;
+    margin-top: 2em;
+    font-weight: 500;
+    text-shadow: -1px -1px 20px black;
+} 
+.hold-sec-one h1{
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+.hold-sec-one p1{
+    border-radius: 20px;
+}
+.element-two{
+    width: 80%;
+    background-color: #2a3166;
+    box-shadow: -1px -1px 20px #fff;
+    padding: 1em;
+    border-radius: 50%;
+    margin-top: 4rem;
+    animation-name: up-down;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+@keyframes up-down{
+    0%{
+        position: relative;
+        bottom: 4rem;
+    }
+    100%{
+        position: relative;
+        bottom: 0rem;
+    }
+}
+.element-two img{
+    width: 100%;
+    border-radius: 50%;
+}
+.hold-sec-one{
+    box-shadow: 1px 1px 20px #fff;
+    width: 60%;
+    text-align: center;
+    background-color: #2a3166;
+    margin-top: 2em;
+    border: 0px;
+    border-radius: 80px;
+    border-style: double;
+    height: 100%;
+    overflow: hidden;
+    animation-name: animate;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    color: whitesmoke;
+    padding:2rem;
+}
+.hold-sec-one p1{
+    font-size: 2em;
+    line-height: 35pt;
+    color: whitesmoke;
+}
+div.about-content{
+    width: 100%;
+    padding: 2rem 1rem;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:5px;
+}
+/**services**/
+#services{
+    width: 100%;
+    background-color: #2a3166;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+.temp{
+    width: 90%;
+}
+.temp h1{
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.list-service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,2fr));
+    grid-gap:10px;
+    background: #5d638f;
+    width: 100%;
+    padding-bottom: 100px; 
+}
+.develop h1{
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.develop p{
+    font-size: 2em;
+}
+.develop{
+    width: 80%;
+    border-radius: 20px;
+    height: 90%;
+    overflow: hidden;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+    background-color: #2a3166;
+    margin-top: 4em;
+    box-shadow: 1px 1px 20px #fff;
+    color: #fff;
+    line-height: 3rem;
+    padding: 10px;
+}
+.icon{
+    background-color: transparent;
+    color:aquamarine;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 5em;
+    margin-top: 0.4em;
+    width: 150px;
+}
+.butt a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+.butt{
+padding: 10px;
+background: transparent;
+color: white;
+border-radius: 30px;
+border: 3px solid #fff;
+margin-top: 1em;
+font-weight: bolder;
+margin-top: 3rem;
+font-size: 20px;
+}
+.butt:hover{
+    left: 1em;
+    transform: rotate(10deg);
+}
+/* Designing my portfolio */
+#My-portfolio{
+    width: 100%;
+    height: 100%;
+    background-color: #5d638f;
+    border-top: 5px solid #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.portfolio-container{
+    color:#fff;
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+.portfolio-container h1{
+    margin-bottom: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.pimg{
+    width: 35%;
+    height: 35%;
+    cursor: pointer;
+}
+.pimg:hover{
+    width: 40%;
+    height: 40%;
+}
+/**WEBPAGE FOOTER**/
+footer{
+    background-color: #2a3166;
+    color: #fff;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 2rem 1rem;
+    
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+footer ul li{
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 30px black;
+    font-weight: bolder;
+}
+.foot{
+    width: 30px;
+    border-radius: 50%;
+    height: 20px;
+    text-align: center;
+}
+.abt{
+    text-align: center;
+    margin-right: 0;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    line-height: 1.7rem;
+}
+.abt h1{
+    color: white;
+    text-shadow: 1px 1px 20px black;
+}
+.content p{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1em;
+    margin-right: 2em;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:3px;
+}
+.social{
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 0px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 20px black;
+}
+
+/* poping out contactus form page */
+#holdall{
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 4em;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+}
+#holdall form h1{
+    font-weight: bolder;
+    font-size: 3em;
+    color: white;
+}
+#form{
+    margin-left: 4em;
+    background-color:  #2a3166;
+    width: 30%;
+    padding: 2em;
+    box-shadow: -1px -1px 20px #fff;
+    text-align: center;
+    font-family: sans-serif;
+    border: 15px solid #fff;
+    border-style: double;
+    border-radius: 40px;
+    overflow: hidden;
+}
+#form input[type="text"],input[type="email"]{
+    width: 40%;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border: 0px;
+    padding-right: 5em;
+}
+textarea{
+    padding-right: 5em;
+    padding-bottom: 4em;
+    background-color: whitesmoke;
+    margin-left: 2.3em;
+    width: 40%;
+    padding-left: 1em;
+}
+#form .sep{
+    text-decoration: none;
+    background-color: RED;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    padding: 7px;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 20px;
+    left: 35%;
+    bottom: 92%;
+}
+#submit{
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bolder;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    width: 50%;
+    cursor: pointer;
+}
+.drop{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 0px;
+}
+.message{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 0px;
+    margin-bottom: 2em;
+    margin-left: -0.6em;
+    position: absolute;
+}
+#phone{
+    margin-left: 2.7em;
+}
+.fa-phone{
+    margin-left: 0.5px;
+}
+/* setting the media query for the popup form so as to become responsive on moblie phones or other screens */
+@media(max-width:768px){
+    #holdall{
+       width: 100%;
+       height: 100%;
+    }
+}
+@media(max-width:768px){
+    #holdall #form h1{
+        font-size: 15px;
+    }
+}
+@media(max-width:768px){
+    #form{
+        width: 65%;
+        height: 30%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+@media(max-width:768px){
+    #form .sep{
+        position: relative;
+        bottom: 1em;
+        margin-left: 1em;
+    }
+}
+@media(max-width:768px){
+    .abt .element-two{
+        margin-left: 2em;
+        padding: 1em;
+    }
+}
+
+@media(max-width:768px){
+    #newsletter{
+        justify-content: left;
+    }
+}
+@media(max-width:768px){
+    .sep{
+        position: relative;
+        padding: 0px;
+        right: 4em;
+        width: 1px;
+        left: 0;
+        bottom: 5px;
+    }
+}
+
+/*adding additional functions, editing the nav bars*/
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    color: #fff;
+    line-height: 80px;
+    margin-right: 0.9em;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* using media queries for the navigation bar
+so as to make it look good on mobile devices */
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+        transform: translateX(50%);
+    }
+    .navigation-bar{
+        background: rgba(14, 54, 74, 0.8);
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 130px;
+        left: -100%;
+        transition: all .2s;
+        text-align: center;
+    }
+    nav .navigation-bar li{
+        display: block;
+        background-color: none;
+        line-height: 80px;
+       
+    }
+    nav .navigation-bar li a {
+        font-size: 22px;
+        background-color:unset;
+    }
+}
+#check:checked~ul{
+    left: 0;
+}
+@media (max-width:858px){
+    header{
+        height: 16vh;
+    }
+}
+@media (max-width:858px){
+    #first-sec{
+        margin-top: 8em;
+    }
+}
+/* designing the image sliding for projects */
+.image-slider{
+    width: 90%;
+    height: 100%;
+    background-color: #2a3166;
+    padding: 0;
+}
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide img{
+    width: 100%;
+}
+/* making the portfolio section responsive on all screens */
+@media (max-width:768px){
+    #My-portfolio{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+    }
+    #My-portfolio h1{
+        font-size: 40px;
+    }
+    .swiper-wrapper{
+        height: 30vh;
+    }
+}
