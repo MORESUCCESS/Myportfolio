@@ -830,8 +830,8 @@ so as to make it look good on mobile devices */
 
     }
     .myimg{
-        width: 65%;
+        width: 80%;
         height: 40vh;
-        margin-left: 6em;
+        margin-left: 5em;
     }
 }
