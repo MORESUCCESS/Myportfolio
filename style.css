@@ -194,23 +194,11 @@ header .all{
     background-size: cover;
     background-position: auto auto;
     border-bottom: 5px solid #fff;
-    /* animation: anime;
-    animation-duration: 40s;
-    animation-delay: 8s;
-    animation-iteration-count: infinite;
-    transition: 8s ease; */
     display: flex;
     gap: -50px;
     height: 100%;
     padding: 3rem 1.7rem;
 }
-/* @keyframes anime{
-    0%{background-image: url('editt.png');}
-    25%{background-image: url('men.png');}
-    50%{background-image: url('ms5.jpg');}
-    75%{background-image: url('ms4.png');}
-    100%{background-image: url('editt.png');}
-} */
 .hold{
     color: white;
     margin-top: 8rem;
