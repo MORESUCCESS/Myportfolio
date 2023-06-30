@@ -64,13 +64,34 @@
              <!--here is home section-->
         <section id="first-sec">
             <div class="hold">
-                <h1>We MORE success develop professional and affordable landing pages and websites with full functionalities, using HTML, CSS, Bootstrap, JavaScript and React programming languages.</h1><br>
+                <span class="animate"><p1>Hello, my name is</p1></span><br>
+                <p2 style="font-size: 4rem;
+                font-family: fantasy;
+                letter-spacing: 14px;
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+                font-weight: bolder;
+                background-size: cover;
+                animation-name: fade-down;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+                line-height: 6rem;margin-bottom: 1rem;
+                text-transform: uppercase;">Hammed Omoniyi</p2>
                 <nav class="CTA">
+                    <h1 style="font-size: 40px;
+                    color: #fff;
+                    font-family: sans-serif;
+                    font-weight: bolder; line-height: 50px;
+                    margin-bottom: 4rem;margin-top: 1rem;">I am a <span class="skills" id="skills">Web developer</span></h1>
                     <ul class="buts">
-                <li><a href="#" onclick="div_show()">Learn more</a></li>
+                <li><a href="#" onclick="div_show()">Get intouch</a></li>
                 <li><a href="#" onclick="div_show()">Contact Us</a></li>
             </ul>
             </nav>
+            </div>
+            <div class="myimg">
+                <img src="ME2.png" class="me">
             </div>
         </section>
         <!--here is about section-->
@@ -79,39 +100,39 @@
             <h1>About Me</h1>
         </div>
             <div class="about-content">
+                <div class="element-two">
+                    <img src="ms.png" alt="Author image" width="440px" height="540px">
+                </div>
                 <div class="hold-sec-one">
                     <h1 style="color:whitesmoke; ">Hey there,</h1><br>
-                    <p1>I am a front-end web developer, I develop a responsive  and affordable websites, contact form pages with thank you page and landing pages.</p1>
+                    <p1>I am a front-end web developer, with 2years of experience. An expert in websites and landing page development using HTML, CSS, BOOTSTRAP and JavaScript. I develop a responsive  and affordable websites, contact form pages.</p1>
                     </div>
-                <div class="element-two">
-                    <img src="me.jpg" alt="Author image" width="440px" height="540px">
-                </div>
-            </div>
+               </div>
         </section>
          <!--here is services section-->
        <section id="services">
            <div class="temp">
-              <center><h1>Our services are<h1></center>
+              <center><h1>My services <h1></center>
            </div>
            <div class="list-service">
             <div class="develop">
             <i class="fa fa-code icon"></i><br>
             <h1>WEB DEVELOPMENT</h1><br>
-            <p>We develop a responsive, Affordable and animated websites, landing pages, contact form pages, newsletter and portfolio.</p>
+            <p>I develop a responsive, Affordable and animated websites, landing pages, contact form pages, newsletter and portfolio.</p>
             <button type="submit" class="butt"><a href="#" onclick="div_show()">Get started!&rarr;</a></button>
             </div>
 
             <div class="develop">
                 <i class="fa fa-envelope icon"></i><br>
                 <h1>WEB DESIGN</h1><br>
-                <p>We design websites using different types of platforms like getresponse, systeme.io and many more.</p>
+                <p>I design websites using different types of platforms like getresponse, systeme.io and many more.</p>
                 <button type="submit" class="butt"><a href="#" onclick="div_show()">Get started!&rarr;</a></button>
                 </div>
 
                 <div class="develop">
                     <i class="fa fa-pie-chart icon"></i><br>
                     <h1>GRAPHICS DESIGN</h1><br>
-                    <p>we also render graphics design services, like flyer, logo, branding, throwpillow and many more.</p>
+                    <p>I also render graphics design services, like flyer, logo, branding, throwpillow and many more.</p>
                     <button class="butt"><a href="#" onclick="div_show()">Get started!&rarr;</a></button>
                     </div>
            </div>
@@ -131,7 +152,7 @@
               <div class="swiper-slide"><img src="salesfunnel.png"></div>
               <div class="swiper-slide"><img src="portfolio.jpg"></div>
               <div class="swiper-slide"><img src="landing2.png"></div>
-              <div class="swiper-slide"><img src="mylandingpage.PNG"></div>
+              <div class="swiper-slide"><img src="mockup.jpg"></div>
               
               ....
             </div>
@@ -195,6 +216,24 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-   
+   <script>
+      const text =document.querySelector(".skills");
+    const textload =()=>{
+        setTimeout(() => {
+            text.textContent="Web Developer";
+        }, 0);
+        setTimeout(() => {
+            text.textContent="Web Designer";
+        }, 8000);
+        setTimeout(() => {
+            text.textContent="Freelancer";
+        }, 12000);
+       setTimeout(() => {
+            text.textContent="Graphic Designer";
+        }, 16000);
+    }
+    textload();
+    setInterval(textload, 24000);
+   </script>
     </body>
 </html>
